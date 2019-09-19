@@ -1,6 +1,8 @@
 # Amharic Datepicker Calendar
 This is an amharic language enabled jquery calendar plugin datepicker, originaly extended and localized from http://keith-wood.name/calendars.html
 
+![Amharic Calendar](/img/view.jpeg)
+
 This plugin was originaly built using [Keithwood Calendars](http://keith-wood.name/calendars.html).
 
 *** Localized and Language referencd by Arefat Hyeredin. ***
