@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Amharic jQuery Calendars Datepicker</title>
+
+<link rel="stylesheet" href="css/redmond.calendars.picker.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.plugin.js"></script>
+
+<script src="js/jquery.calendars.js"></script>
+<script src="js/jquery.calendars.plus.js"></script>
+<script src="js/jquery.calendars.picker.js"></script>
+
+<script src="js/jquery.calendars.ethiopian.js"></script>
+<script src="js/jquery.calendars.ethiopian-am.js"></script>
+
+<script>
+$(function() {
+	 var calendar = $.calendars.instance('ethiopian','am');
+	$('#popupDatepicker').calendarsPicker({calendar: calendar});
+	$('#inlineDatepicker').calendarsPicker({calendar: calendar, onSelect: showDate});
+});
+
+function showDate(date) {
+	alert('The date chosen is ' + date);
+}
+</script>
+</head>
+<body>
+<h1> Amharic jQuery Calendars Datepicker</h1>
+<p>This page demonstrates the amharic calendar date picker 
+	Extended from jQuery Calendars Datepicker plugin</a>.
+	It contains the minimum requirements for using the plugin and
+	can be used as the basis for your own experimentation.</p>
+<p>For more detail see the full <a href="http://keith-wood.name/calendarsPickerRef.html">documentation reference</a> page.</p>
+<p>A popup datepicker <input type="text" id="popupDatepicker"></p>
+<p>Or inline</p>
+<div id="inlineDatepicker"></div>
+</body>
+</html>
