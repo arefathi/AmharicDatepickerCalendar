@@ -1,6 +1,3 @@
-﻿/* http://keith-wood.name/calendars.html
-   Amharic localisation for Ethiopian calendar for jQuery v2.1.0.
-   Written by Tewodros Zena February 2010. */
 (function($) {
 	'use strict';
 	$.calendars.calendars.ethiopian.prototype.regionalOptions.am = {
