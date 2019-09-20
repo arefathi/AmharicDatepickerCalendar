@@ -89,7 +89,9 @@ Another optional parameter, to disable keyboard input for the input field, is pr
         disableInput: true
       });
     });
+    
 ---------------------------
+
 #### Todos
 
 - [ ] Integrate all Geez Numerals
