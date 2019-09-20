@@ -1,0 +1,55 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>Amharic Fully Localized jQuery Calendars Datepicker</title>
+<!-- @author Arefat Hyeredin -->
+<!-- arefathyeredin@outlook.com -->
+<!-- https://github.com/ShadowX99 -->
+<style type="text/css">
+@import "jquery.calendars.picker.css";
+/* Or use these for a ThemeRoller theme
+@import "themes16/southstreet/ui.all.css";
+@import "ui-southstreet.datepick.css";
+*/
+
+</style>
+<script type="text/javascript" src="jquery-1.4.2.js"></script>
+<script type="text/javascript" src="jquery.calendars.js"></script>
+<script type="text/javascript" src="jquery.calendars.plus.js"></script>
+<script type="text/javascript" src="jquery.calendars.picker.js"></script>
+
+
+<script type="text/javascript" src="jquery.calendars.ethiopian.js"></script>
+<script type="text/javascript" src="jquery.calendars.ethiopian-am.js"></script>
+<script type="text/javascript" src="jquery.calendars.picker-am.js"></script>
+<script type="text/javascript">
+$(function() {
+//	$.calendars.picker.setDefaults({renderer: $.calendars.picker.themerollerRenderer}); // Requires jquery.calendars.picker.ext.js
+var calendar = $.calendars.instance('ethiopian','am');
+  $('.calendarspicker').calendarsPicker({
+    calendar: $.calendars.instance('ethiopian', 'am'),
+    disableInput: true
+  });
+	
+	$('#popupDatepicker').calendarsPicker({calendar: calendar});
+	$('#inlineDatepicker').calendarsPicker({calendar: calendar,onSelect: showDate});
+});
+
+function showDate(date) {
+	alert('The date chosen is ' + date);
+}
+</script>
+</head>
+<body>
+<h1>Amharic Fully Localized  with Geez numerals jQuery Calendars Datepicker</h1>
+<p>This page demonstrates the very basics of the
+	<a href="http://keith-wood.name/calendarsPicker.html">jQuery Amharic fully localized Calendars Datepicker plugin</a>.
+	It contains the minimum requirements for using the plugin and
+	can be used as the basis for your own experimentation.</p>
+<p>For more detail see the <a href="http://keith-wood.name/calendarsPickerRef.html">documentation reference</a> page.</p>
+<p>A popup datepicker <input type="text" id="popupDatepicker"></p>
+<p>Or inline</p>
+<div id="inlineDatepicker"></div>
+</body>
+</html>
